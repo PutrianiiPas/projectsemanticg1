@@ -11,7 +11,6 @@ export default function Card({
   className = "",
   ...props
 }: CardProps) {
-
   const paddings = {
     small: "p-4",
     medium: "p-6",
@@ -20,13 +19,7 @@ export default function Card({
 
   return (
     <div
-      className={`
-        bg-bg2
-        rounded-2xl
-        shadow-sm
-        ${paddings[padding]}
-        ${className}
-      `}
+      className={`rounded-2xl bg-bg2 shadow-sm ${paddings[padding]} ${className}`}
       {...props}
     >
       {children}

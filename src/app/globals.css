@@ -17,7 +17,6 @@
 @theme inline {
   --color-bg1: var(--bg1-color);
   --color-bg2: var(--bg2-color);
-
   --color-primary: var(--primary-color);
   --color-secondary: var(--secondary-color);
 
@@ -38,15 +37,22 @@
 
 body {
   margin: 0;
+  min-height: 100vh;
   background: var(--bg1-color);
   color: var(--text1-color);
   font-family: var(--font-inclusive-sans), sans-serif;
 }
 
-h1 {
-  font-family: var(--font-jetbrains-mono);
+button,
+input {
+  font: inherit;
 }
 
-.special-heading {
-  font-family: var(--font-libertinus-serif);
+button {
+  cursor: pointer;
+}
+
+::selection {
+  background-color: var(--secondary-color);
+  color: var(--text1-color);
 }

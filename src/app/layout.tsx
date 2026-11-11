@@ -6,8 +6,8 @@ import Navbar from "@/components/layout/Navbar";
 
 import {
   inclusiveSans,
-  libertinusSerif,
   jetBrainsMono,
+  libertinusSerif,
 } from "./fonts";
 
 export const metadata: Metadata = {
@@ -24,11 +24,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`
-        ${inclusiveSans.variable}
-        ${libertinusSerif.variable}
-        ${jetBrainsMono.variable}
-      `}
+      className={`${inclusiveSans.variable} ${libertinusSerif.variable} ${jetBrainsMono.variable}`}
     >
       <body>
         <Navbar />
