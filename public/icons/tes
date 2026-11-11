@@ -1,0 +1,28 @@
+import {
+  Folder,
+  Upload,
+  UserRound,
+} from "lucide-react";
+
+export default function Example() {
+  return (
+    <div className="flex gap-4">
+      <Folder size={24} />
+      <Upload size={24} />
+      <UserRound size={24} />
+    </div>
+  );
+}
+- Folder
+- FolderCode
+- Upload
+- Download
+- FileCode
+- ArrowRight
+- ArrowLeft
+- Copy
+- UserRound
+- Check
+- X
+- RefreshCw
+- 

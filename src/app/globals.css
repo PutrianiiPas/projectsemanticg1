@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+:root {
+  --bg1-color: #FFF1E6;
+  --bg2-color: #FFFFFF;
+
+  --primary-color: #F28C45;
+  --secondary-color: #FCE5D3;
+
+  --text1-color: #000000;
+  --text2-color: #896953;
+
+  --bgbutton-color: rgba(137, 105, 83, 0.15);
+  --textgrey-color: rgba(0, 0, 0, 0.60);
+}
+
+@theme inline {
+  --color-bg1: var(--bg1-color);
+  --color-bg2: var(--bg2-color);
+
+  --color-primary: var(--primary-color);
+  --color-secondary: var(--secondary-color);
+
+  --color-text1: var(--text1-color);
+  --color-text2: var(--text2-color);
+
+  --color-bgbutton: var(--bgbutton-color);
+  --color-textgrey: var(--textgrey-color);
+
+  --font-sans: var(--font-inclusive-sans);
+  --font-mono: var(--font-jetbrains-mono);
+  --font-serif: var(--font-libertinus-serif);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg1-color);
+  color: var(--text1-color);
+  font-family: var(--font-inclusive-sans), sans-serif;
+}
+
+h1 {
+  font-family: var(--font-jetbrains-mono);
+}
+
+.special-heading {
+  font-family: var(--font-libertinus-serif);
+}
